@@ -50,7 +50,7 @@ barchartGC(~result + Sex,data=kRdata, type="percent")
 
   
 
-Among those who died from covid, according to the data plot chart the males are more likely to die compared to female.
+Among those who died from covid, according to the data plot chart the males are more likely to die compared to females.
 
 
 
