@@ -73,7 +73,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p value is 0.001, we reject the null hypothesis because it is lower than 0.05.The odds are that males in Korea are 2.3 times more likely to die than females.
+The p value is 0.001, we reject the null hypothesis because it is lower than 0.05.The odds are that males in Korea are 2.3 times more likely to die than the females.
 
 
 ## Conclusions
