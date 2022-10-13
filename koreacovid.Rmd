@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Janette Quezada"
+date: "10/12/2022"
 output:
   html_document: default
   pdf_document: default
@@ -24,9 +24,10 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
+$H_0$Dying is independent of sex.
+$H_A$Dying depends on sex.
 
-
-
+Based on gender we will be using the CAT helper file.
 Table of patients:
 ```{r}
 
@@ -36,24 +37,46 @@ with(kRdata, table(Sex, result))
 
 ```
 
+
+Among the females 25 out of 1831 died.Among the males 44 out of 1411.According to this the male is most likely to die compare to female.
+
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+
+```
 
   
 
-
+Among those who died from covid, according to the data plot chart the males are more likely to die compared to female.
 
 
 
   
 ## Numerical results
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
+It looks like twice as many more males died than females according to th numerical summary. 
 
 ## Inferential results 
 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p value is 0.001, we reject the null hypothesis because it is lower than 0.05.The odds are that males in Korea are 2.3 times more likely to die than females.
 
 
 ## Conclusions
+
+Among those in Korea Males are most likely to die according to the fisher test the p value is 0.0009.In the chi-squared test the p value is  0.0012 which is lower than 0.05 we reject the null hypothesis.Dying is not independent of sex.
 
