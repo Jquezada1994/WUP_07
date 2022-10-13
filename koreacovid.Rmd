@@ -62,7 +62,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-It looks like twice as many more males died than females according to th numerical summary. 
+It looks like twice as many more males died than females according to th numerical summaries. 
 
 ## Inferential results 
 
