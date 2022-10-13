@@ -78,5 +78,5 @@ The p value is 0.001, we reject the null hypothesis because it is lower than 0.0
 
 ## Conclusions
 
-Among those in Korea Males are most likely to die according to the fisher test the p value is 0.0009.In the chi-squared test the p value is  0.0012 which is lower than 0.05 we reject the null hypothesis.Dying is not independent of sex.
+Among those in Korea Males are most likely to die according to the fisher test the p value is 0.0009.In the chi-squared test the p value is  0.0012 which is lower than 0.05 we reject the null hypothesis.Dying is not independent of sex according to the data that was presented on the charts.
 
